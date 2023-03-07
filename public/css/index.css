@@ -1,0 +1,38 @@
+body {
+  background: #be13438f;
+  width: 100vw;
+  height: auto;
+}
+main{
+  display: flex;
+ 
+  width: 100%;
+  gap: 5px;
+}
+.manipulacao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  width:40%;
+ 
+}
+.formulario {
+  width:59%;
+}
+input{
+ 
+}
+h2{
+  text-align: center;
+}
+fieldset > div, form > div{
+  margin: 10px;
+}
+#listaUsuarios{
+  border: 1px solid yellow;
+}
+.listaUsuario{
+  background: turquoise;
+}
