@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./public/css/index.css">
-    <title>Manipulaçao de dom - Exercício 02</title>
+    <title>Manipulação da Dom e Formulario</title>
     <style>
 
     </style>
@@ -14,141 +17,119 @@
 
 <body>
     <main>
-      
+
         <section class="formulario">
             <h2>Validação de Formulario</h2>
             <form id="formularioCadastro">
-    
+
                 <fieldset>
                     <legend><strong>Dados pessoais:</strong> </legend>
                     <div>
-                        <label for="cpf">CPF:</label>
-                        <input type="number" id="cpf" name="cpf" required placeholder="digite seu cpf">
-                    </div>
-                    <div>
                         <label for="nomeCompleto">Nome completo?</label>
-                        <input type="text" id="nomeCompleto" name="nomeCompleto" required placeholder="digite seu nome">
+                        <input type="text" minlength="3" id="nomeCompleto" name="nomeCompleto" required
+                            placeholder="digite seu nome">
                     </div>
-    
-                    <div>
-                        <label for="dataNascimento">Data de Nascimento</label>
-                        <input type="date" id="dataNascimento" required name="dataNascimento"
-                            placeholder="digite sua data de nascimento">
-                    </div>
-    
                     <div>
                         <label for="email">Seu E-mail:</label>
-                        <input type="email" id="email"required name="email" placeholder="digite seu E-mail">
+                        <input type="email" id="email" required name="email" placeholder="digite seu E-mail">
                     </div>
-    
+
                     <div>
                         <label for="whats">Whats</label>
-                        <input type="tel" id="whats"required name="whats" placeholder="digite seu whats">
+                        <input type="tel" id="whats" required name="whats" placeholder="digite seu whats">
                     </div>
-    
-                    <div>
-                        <label for="enderecoCompleto">Endereço completo:</label>
-                        <input type="text"required id="enderecoCompleto" name="enderecoCompleto" placeholder="digite seu endereço">
-                    </div>
-    
                     <div>
                         <label for="pretSalarial">Pretenção Salarial</label>
-                        <input type="number"required id="pretSalarial" name="pretSalarial"
+                        <input type="number" required id="pretSalarial" name="pretSalarial"
                             placeholder="digite sua pretenção salarial">
                     </div>
-    
-    
                 </fieldset>
                 <fieldset>
                     <legend><strong>Conhecimentos Tecnicos:</strong> </legend>
-    
+
                     <label for=""><strong>Area de atuação:</strong></label>
                     <div>
                         <input type="radio" name="areaAtuacao" id="frontEnd" value="frontEnd">
                         <label for="frontEnd">Front-end</label>
                     </div>
-    
+
                     <div>
-                        <input type="radio" name="areaAtuacao" id="backend" value="backend">
+                        <input type="radio" name="areaAtuacao" id="backend" value="backend" checked>
                         <label for="backend">Back-end</label>
                     </div>
-    
+
                     <div>
                         <input type="radio" name="areaAtuacao" id="fullstack" value="fullstack">
                         <label for="fullstack">fullstack</label>
                     </div>
-    
+
                     <div>
                         <label for="senioridade"><strong>Senioridade:</strong></label>
-                        <select name="senioridade" id="senioridade">
+                        <select name="senioridade" id="senioridade" required>
                             <option value="" disable selected> Selecione:</option>
                             <option value="junior">junior</option>
                             <option value="pleno">pleno</option>
                             <option value="senior">senior</option>
                         </select>
                     </div>
-    
+
                     <div>
                         <label for="tecnologias"><strong>Tecnologias:</strong></label>
                         <div>
-                             <input type="checkbox" name="tecnologias" id="html" value="html">
-                        <label for="html">html</label>
-    
-                        <input type="checkbox" name="tecnologias" id="css" value="css">
-                        <label for="css">css</label>
-    
-                        <input type="checkbox" name="tecnologias" id="javascript" value="javascript">
-                        <label for="javascript">javascript</label>
-    
-                        <input type="checkbox" name="tecnologias" id="nodeJs" value="nodeJs">
-                        <label for="nodeJs">nodeJs</label>
-    
+                            <input type="checkbox" name="tecnologias" id="html" value="html">
+                            <label for="html">html</label>
+
+                            <input type="checkbox" name="tecnologias" id="css" value="css">
+                            <label for="css">css</label>
+
+                            <input type="checkbox" name="tecnologias" id="javascript" value="javascript">
+                            <label for="javascript">javascript</label>
+
+                            <input type="checkbox" name="tecnologias" id="nodeJs" value="nodeJs">
+                            <label for="nodeJs">nodeJs</label>
+
                         </div>
                         <div>
-                            
-                        <input type="checkbox" name="tecnologias" id="typescript" value="typescript">
-                        <label for="typescript">Typescript</label>
-    
-                        <input type="checkbox" name="tecnologias" id="postgresql" value="postgresql">
-                        <label for="postgresql">postgresql</label>
-    
-                        <input type="checkbox" name="tecnologias" id="Java" value="Java">
-                        <label for="Java">Java</label>
-    
-                        <input type="checkbox" name="tecnologias#" id="c#" value="c#">
-                        <label for="c#">c#</label>
-                    </div>
+
+                            <input type="checkbox" name="tecnologias" id="typescript" value="typescript">
+                            <label for="typescript">Typescript</label>
+
+                            <input type="checkbox" name="tecnologias" id="postgresql" value="postgresql">
+                            <label for="postgresql">postgresql</label>
+
+                            <input type="checkbox" name="tecnologias" id="Java" value="Java">
+                            <label for="Java">Java</label>
+
+                            <input type="checkbox" name="tecnologias#" id="c#" value="c#">
+                            <label for="c#">c#</label>
                         </div>
-    
-                       
-    
+                    </div>
+
+
+
                     <div>
                         <label for="experiencia"><strong>Conte um pouco sobre sua experiencia:</strong></label> <br>
-                        <textarea name="experiencia" id="experiencia" cols="50" rows="5"></textarea>
-    
+                        <textarea name="experiencia" id="experiencia" cols="50" rows="5" wrap="hard"></textarea>
+
                     </div>
                     <div>
-                      
-                        <label for="curriculo">  <strong>Anexe seu curriculo:</strong></label><br>
+
+                        <label for="curriculo"> <strong>Anexe seu curriculo:</strong></label><br>
                         <input type="file" name="curriculo" id="curriculo">
                     </div>
                 </fieldset>
-                <div>
-                    <button type="submit">👩‍💻 Cadastrar DEV</button>
+                <div class="btnForm">
+                    <button type="submit">👩‍💻 Cadastrar DEV</button> <a href="./listaUsuario.html"> Ver lista de
+                        Usuarios cadastrado.</a>
+
                 </div>
-              </form>
 
-              <h2> Lista de Usuarios cadastrado:</h2>
-
-              <article class="listaUsuarios">
-               
-
-              </article>
-
+            </form>
         </section>
+
         <section class="manipulacao">
             <h1>Manipulaçao da DOM</h1>
-    
+
             <div id="conteudo">
                 <!--aqui vai varios conteudos pelo js-->
                 <button id="adicionar">Adicionar Novo Elemento</button>
@@ -160,7 +141,7 @@
             <div>
                 <div class="div1"> <button id="imagem" onclick="addImagem()">CLIQUE AQUI</button>
                 </div>
-    
+
                 <div class="div2">
                     <img src="./public/img/nova-removebgsss.png" style="display:none;" id="img" height="100%"
                         width="100%" />
@@ -168,10 +149,8 @@
             </div>
         </section>
     </main>
-   
-
-
-    <script src="./public/js/dom02.js"></script>
+    <script src="./public/js/index.js"></script>
+    <script src="./public/js/dom.js"></script>
 </body>
 
 </html>

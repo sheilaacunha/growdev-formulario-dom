@@ -1,38 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
-  background: #be13438f;
+  background: #3636363b;
   width: 100vw;
   height: auto;
 }
-main{
+
+main {
   display: flex;
- 
+
   width: 100%;
   gap: 5px;
 }
-.manipulacao{
+
+.manipulacao {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
   gap: 2%;
-  width:40%;
- 
+  width: 40%;
+
 }
+
 .formulario {
-  width:59%;
+  width: 59%;
+  margin: 2%;
 }
-input{
- 
-}
-h2{
+
+h2 {
   text-align: center;
 }
-fieldset > div, form > div{
+
+fieldset>div,
+form>div {
   margin: 10px;
 }
-#listaUsuarios{
-  border: 1px solid yellow;
+
+th {
+  background-color: rgba(44, 43, 43, 0.308);
 }
-.listaUsuario{
-  background: turquoise;
+
+td,
+th {
+  border: 1px solid #7c7979;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.btn {
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+  height: 15%;
+  margin: 5px;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+  color: #000;
+}
+
+a:hover,.btn:hover {
+  background-color: #363636;
+  color: #fff;
+}
+
+.btnForm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
 }
